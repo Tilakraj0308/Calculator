@@ -27,10 +27,10 @@
       </thead>
       <tbody>
         <tr>
-          <td><button type="button" class="btn btn-dark btn-lg" id="0" onclick="refresh(9)">d</button></td>
-          <td><button type="button" class="btn btn-dark btn-lg" id="1" onclick="refresh(8)">%</button></td>
-          <td><button type="button" class="btn btn-dark btn-lg" id="2"  onclick="refresh(7)">*</button></td>
-          <td><button type="button" class="btn btn-dark btn-lg" id="3" onclick="refresh('+')" style="padding: 20px 35px;">AC</button></td>
+          <td><button type="button" class="btn btn-dark btn-lg" id="a" onclick="refresh(9)" style="padding: 20px 30px">Del</button></td>
+          <td><button type="button" class="btn btn-dark btn-lg" id="b" onclick="refresh(8)">%</button></td>
+          <td><button type="button" class="btn btn-dark btn-lg" id="c"  onclick="refresh(7)">*</button></td>
+          <td><button type="button" class="btn btn-dark btn-lg" id="d" onclick="clear()" style="padding: 20px 35px;">AC</button></td>
         </tr>
         <tr>
           <td><button type="button" class="btn btn-dark btn-lg" id="0" onclick="refresh(9)">9</button></td>
@@ -48,7 +48,7 @@
           <td><button type="button" class="btn btn-dark btn-lg" id="8" onclick="refresh(3)">3</button></td>
           <td><button type="button" class="btn btn-dark btn-lg" id="9" onclick="refresh(2)">2</button></td>
           <td><button type="button" class="btn btn-dark btn-lg" id="10" onclick="refresh(1)">1</button></td>
-          <td rowspan="2"><button type="button" class="btn btn-dark btn-lg" id="11" onclick="refresh('*')" style="height: 160px;">=</button></td>
+          <td rowspan="2"><button type="button" class="btn btn-dark btn-lg" id="11" onclick="result()" style="height: 160px;">=</button></td>
         </tr>
         <tr>
           <td><button type="button" class="btn btn-dark btn-lg" id="12" onclick="refresh(0)">0</button></td>
@@ -70,6 +70,9 @@
       function result(){
         res = eval(screen[0].innerHTML);
         screen[0].innerHTML = res;
+      }
+      function clear(){
+        screen[0].innerHTML = "";
       }
     </script>
   </body>
