@@ -27,9 +27,9 @@
       </thead>
       <tbody>
         <tr>
-          <td><button type="button" class="btn btn-dark btn-lg" id="a" onclick="refresh(9)" style="padding: 20px 30px">Del</button></td>
-          <td><button type="button" class="btn btn-dark btn-lg" id="b" onclick="refresh(8)">%</button></td>
-          <td><button type="button" class="btn btn-dark btn-lg" id="c"  onclick="refresh(7)">*</button></td>
+          <td><button type="button" class="btn btn-dark btn-lg" id="a" onclick="del()" style="padding: 20px 30px">Del</button></td>
+          <td><button type="button" class="btn btn-dark btn-lg" id="b" onclick="refresh('%')">%</button></td>
+          <td><button type="button" class="btn btn-dark btn-lg" id="c"  onclick="refresh('*')">*</button></td>
           <td><button type="button" class="btn btn-dark btn-lg" id="d" onclick="clr()" style="padding: 20px 35px;">AC</button></td>
         </tr>
         <tr>
@@ -73,6 +73,11 @@
       }
       function clr(){
         screen[0].innerHTML = "";
+      }
+      function del(){
+        str = screen[0].innerHTML;
+        str = str.slice(0 , str.length - 1);
+        screen[0].innerHTML = str;
       }
     </script>
   </body>
