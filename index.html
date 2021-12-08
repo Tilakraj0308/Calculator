@@ -27,6 +27,12 @@
       </thead>
       <tbody>
         <tr>
+          <td><button type="button" class="btn btn-dark btn-lg" id="0" onclick="refresh(9)">d</button></td>
+          <td><button type="button" class="btn btn-dark btn-lg" id="1" onclick="refresh(8)">%</button></td>
+          <td><button type="button" class="btn btn-dark btn-lg" id="2"  onclick="refresh(7)">*</button></td>
+          <td><button type="button" class="btn btn-dark btn-lg" id="3" onclick="refresh('+')" style="padding: 20px 35px;">AC</button></td>
+        </tr>
+        <tr>
           <td><button type="button" class="btn btn-dark btn-lg" id="0" onclick="refresh(9)">9</button></td>
           <td><button type="button" class="btn btn-dark btn-lg" id="1" onclick="refresh(8)">8</button></td>
           <td><button type="button" class="btn btn-dark btn-lg" id="2"  onclick="refresh(7)">7</button></td>
@@ -36,19 +42,19 @@
           <td><button type="button" class="btn btn-dark btn-lg" id="4" onclick="refresh(6)">6</button></td>
           <td><button type="button" class="btn btn-dark btn-lg" id="5" onclick="refresh(5)">5</button></td>
           <td><button type="button" class="btn btn-dark btn-lg" id="6" onclick="refresh(4)">4</button></td>
-          <td><button type="button" class="btn btn-dark btn-lg" id="7" onclick="refresh('-')">-</button></td>
+          <td><button type="button" class="btn btn-dark btn-lg" id="7" onclick="refresh('-')" style="padding: 20px 43px;">-</button></td>
         </tr>
         <tr>
           <td><button type="button" class="btn btn-dark btn-lg" id="8" onclick="refresh(3)">3</button></td>
           <td><button type="button" class="btn btn-dark btn-lg" id="9" onclick="refresh(2)">2</button></td>
           <td><button type="button" class="btn btn-dark btn-lg" id="10" onclick="refresh(1)">1</button></td>
-          <td><button type="button" class="btn btn-dark btn-lg" id="11" onclick="refresh('*')">*</button></td>
+          <td rowspan="2"><button type="button" class="btn btn-dark btn-lg" id="11" onclick="refresh('*')" style="height: 160px;">=</button></td>
         </tr>
         <tr>
           <td><button type="button" class="btn btn-dark btn-lg" id="12" onclick="refresh(0)">0</button></td>
           <td><button type="button" class="btn btn-dark btn-lg" id="13" onclick="refresh('.')">.</button></td>
           <td><button type="button" class="btn btn-dark btn-lg" id="14" onclick="refresh('/')">/</button></td>
-          <td><button type="button" class="btn btn-dark btn-lg" id="15" onclick="result()">=</button></td>
+          <!-- <td><button type="button" class="btn btn-dark btn-lg" id="15" onclick="result()">=</button></td> -->
         </tr>
       </tbody>
     </table></h1>
