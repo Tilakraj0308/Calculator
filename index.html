@@ -82,8 +82,10 @@
     flag = false;
     screen = document.getElementsByTagName("th");
     function refresh(e) {
-      if(!flag)
+      if(!flag || (e === '+' || e === '-'||e === '%'||e === '/' || e === '*')){
         screen[0].innerHTML += e;
+        flag = false;
+      }
       else{
         screen[0].innerHTML = e;
         flag = false;
